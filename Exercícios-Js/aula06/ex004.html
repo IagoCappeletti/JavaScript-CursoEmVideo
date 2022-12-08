@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var salario = Number(window.prompt('Qual seu salário em BRL?'))
+        var salario2 = Number(window.prompt('Qual seu segundo salário em BRL?'))
+        var salario3 = Number(window.prompt('Qual é o seu 3 salário?'))
+        window.alert('Nossa rede é totalmente segura!!!')
+        document.write(`Olá, <strong> ${nome}</strong>! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em minusculo é ${nome.toLowerCase()}`)
+        document.write('<p>')
+        document.write(`Seu 1º salário em reais  é ${salario.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}<br/>`)
+        document.write(`Seu 2º salário em reais  é ${salario2.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}<br/>`)
+        var soma = salario + salario2
+        document.write(`A soma dos salários vai dar ${soma.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)
+        document.write('<p>')
+        var soma2 = soma + salario3
+        document.write('<p>')
+        var iago = 'soma' <= 3000 ? "vc não ganha bem" : "vc ganha bem"
+        document.write(`${iago}`)
+        document.write('<p>')
+        document.write(`A soma dos dois salários mais o terceiro é: ${soma2.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}<br/>`)
+        document.write(`A soma dos dois salários mais o terceiro é: ${soma2.toLocaleString('pt-br',{style: 'currency', currency: 'USD'})}<br/>`)
+        document.write(`A soma dos dois salários mais o terceiro é: ${soma2.toLocaleString('pt-br',{style: 'currency', currency: 'EUR'})}<br/>`)
+
+    </script>
+</body>
+</html>
