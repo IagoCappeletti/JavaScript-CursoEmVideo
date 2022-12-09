@@ -1,2 +1,2 @@
 # CursoJavaScript-CursoEmVideo
- Exercícios realizados em JavaScript di Curso em Vídeo
+ Exercícios realizados em JavaScript do Curso em Vídeo
